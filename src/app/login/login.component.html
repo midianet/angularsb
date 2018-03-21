@@ -7,10 +7,10 @@
     <div class="form">
         <div class="thumbnail"><img src="assets/images/user.png"/></div>
         <form name="frmAuth" class="login-form">
+            {{frmAuth.$valid}}
             <input type="text"     class="form-control input-lg" id="username" placeholder="Usuário" required >
             <input type="password" class="form-control input-lg" id="password" placeholder="Senha" required >
-            <!-- <a class="btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Entrar </a> -->
-            <button type="button" ng-disabled="!frmAuth.$valid">Entrar</button>
+            <a class="btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Entrar </a>
             <div>
                 {{error}}
             </div>

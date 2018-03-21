@@ -1,0 +1,73 @@
+<div>
+    <!-- <app-page-header [heading]="'Participantes'" [icon]="'fa fa-address-book'"></app-page-header> -->
+    <div class="row" style="float:right">
+        <a [routerLink]="['edit/']">
+            <i class="fa fa-fw fa-address-book"></i>&nbsp;Participantes
+        </a>
+    </div>
+    <div class="row">
+        filtros 
+    </div>
+    <div class="row">
+        <!-- <div *ngIf="posts?.length > 0;else noPosts" class="search-results" infinite-scroll [infiniteScrollDistance]="2" [infiniteScrollUpDistance]="2" [infiniteScrollThrottle]="50" (scrolled)="onScrollDown()" [scrollWindow]="false">
+            <table class="responsive-table feed striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>State/City</th>
+                        <th>Phone</th>
+                        <th>Category</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let post of posts | filter:term">
+                        <td>{{post.title}}</td>
+                        <td>{{post.geo}}</td>
+                        <td>{{post.Telephone}}</td>
+                        <td>{{post.category}}</td>
+                        <td>Detail</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+        <div class="search-results"
+            <!-- infiniteScroll -->
+            <!-- [infiniteScrollDistance]="2" -->
+            <!-- [infiniteScrollThrottle]="50" -->
+            (scrolled)="onScroll()">
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-hover table-striped">
+            <thead class="ng-tns-c5-6">
+                <tr class="ng-tns-c5-6">
+                    <th class="ng-tns-c5-6">Nome</th>
+                    <th class="ng-tns-c5-6">Apelido</th>
+                    <th class="ng-tns-c5-6">Status</th>
+                    <th class="ng-tns-c5-6">Ação</th>
+                </tr>
+            </thead>
+            <tbody class="ng-tns-c5-6">
+                <tr class="ng-tns-c5-6">
+                    <td class="ng-tns-c5-6">Marcos Fernando Costa</td>
+                    <td class="ng-tns-c5-6">Marcos Fernando (DJ Nerd)</td>
+                    <td class="ng-tns-c5-6">Confirmado</td>
+                    <td class="ng-tns-c5-6">&nbsp;</td>
+                </tr>
+                <tr class="ng-tns-c5-6">
+                    <td class="ng-tns-c5-6">Michele Souza</td>
+                    <td class="ng-tns-c5-6">Michele (Bot)</td>
+                    <td class="ng-tns-c5-6">Aprovado</td>
+                    <td class="ng-tns-c5-6">&nbsp;</td>                    
+                </tr>
+                <tr class="ng-tns-c5-6">
+                    <td class="ng-tns-c5-6">Rodrigo Rodrigues</td>
+                    <td class="ng-tns-c5-6">Rodrigo (RGV)</td>
+                    <td class="ng-tns-c5-6">Confirmado</td>
+                    <td class="ng-tns-c5-6">&nbsp;</td>                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
